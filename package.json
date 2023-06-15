@@ -7,11 +7,19 @@
     "fix:lint:css": "npx stylelint \"**/*.css\" --fix",
     "lint:html": "npx linthtml \"**/*.html\"",
     "lint:all": "npm run lint:html && npm run lint:css",
-    "pre-commit": "npm run lint:html && npm run lint:css"
+    "pre-commit": "npm run lint:html && npm run lint:css",
+    "compile:sass":"sass --watch scss:assets/css"
   },
   "devDependencies": {
     "@linthtml/linthtml": "^0.9.4",
+    "sass": "^1.63.3",
     "stylelint": "^15.4.0",
     "stylelint-config-standard": "^32.0.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.0",
+    "autoprefixer": "^10.4.14",
+    "bootstrap": "^5.3.0",
+    "postcss-cli": "^10.1.0"
   }
 }
