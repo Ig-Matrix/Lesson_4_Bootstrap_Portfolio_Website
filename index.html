@@ -91,10 +91,14 @@
                                 with a user-centric approach.
                             </span>
                         </h1>
-                        <button type="button" class="rounded-pill btn-rounded hide">
-                            Get in Touch
+                        <a href="#form" class="rounded-pill btn-rounded hide" id="get-in-touch">Get in Touch
+                            
                             <span><i class="fas fa-arrow-right"></i></span>
-                        </button>
+                        </a>
+                        <!-- <button type="button" class="rounded-pill btn-rounded hide">
+                            <a href="#form" class="get-in-touch" id="get-in-touch">Get in Touch</a>            
+                            <span><i class="fas fa-arrow-right"></i></span>
+                        </button> -->
                     </div>
                     <!-- Video -->
                     <div class="col-md-6 intros text-end  animate__animated animate__fadeInRight">
@@ -826,25 +830,25 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-6 bg-white shadow p-3 animate__animated animate__fadeIn">
+                    <div class="col-12 col-lg-6 bg-white shadow p-3 animate__animated animate__fadeIn" id="form">
                         <div class="form w-100 pb-2">
                             <h4 class="display-3--title mb-5">Start Your Project</h4>
-                            <form action="https://formspree.io/f/xdornzbj" class="row" method="POST">
+                            <form action="https://formspree.io/f/xdornzbj" class="row" method="POST" >
                                 <div class=" col-lg-6 col-md-6 mb-3">
                                     <input type="text" placeholder="First Name" id="inputFirstName" 
-                                    class="form-control shadow form-control-lg" name="fname">
+                                    class="form-control shadow form-control-lg" name="fname" required>
                                 </div>
                                 <div class=" col-lg-6 col-md-6 mb-3">
                                     <input type="text" placeholder="Last Name" id="inputLastName" 
-                                    class="form-control shadow form-control-lg" name="lname">
+                                    class="form-control shadow form-control-lg" name="lname" required>
                                 </div>
                                 <div class="col-lg-12 mb-3">
                                     <input type="email" placeholder="Email Address" id="inputEmail" 
-                                    class="form-control shadow form-control-lg" name="email">
+                                    class="form-control shadow form-control-lg" name="email" required>
                                 </div>
                                 <div class="col-lg-12 mb-3">
-                                    <textarea name="message" placeholder="message" id="message" rows="8" 
-                                    class="form-control shadow form-control-lg" name="message"></textarea>
+                                     <textarea name="message" placeholder="message" id="message" rows="8" 
+                                    class="form-control shadow form-control-lg" name="message" required></textarea>
                                 </div>
                                 <div class="text-center d-grid mt-1">
                                     <button type="submit" class="btn btn-primary rounded-pill pb-3 pt-3">

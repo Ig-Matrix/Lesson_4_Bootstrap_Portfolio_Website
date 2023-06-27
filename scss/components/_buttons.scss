@@ -7,10 +7,12 @@
     font-weight: 700;
     margin: 0;
     border: .1rem solid rgba($white, 0.6);
+    color: $black;
     background-color: $white;
+    text-decoration: none;
 
     &.hide {
-        @include media-breakpoint-down(sm) {
+        @include media-breakpoint-down(lg) {
             display: none;
         }
     }
@@ -29,6 +31,8 @@
             color: $white;
             font-size: 1rem;
             line-height: 2.5rem;
+            position: absolute;
+            left: 10px;
         }
 
     }
@@ -42,3 +46,5 @@
         }
     }
 }
+
+
